@@ -1,0 +1,34 @@
+.dialog-wrapper{
+	display: none;
+	height: 100%;
+}
+
+.dialog-wrapper.open{
+	display: block;
+}
+
+.dialog-wrapper > .overlay{
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+}
+
+.dialog-wrapper > .dialog{
+	z-index:10;
+	background-color: #fff;
+	position: fixed;
+	top:24px;
+	left: 24px;
+	right: 24px;
+	bottom: 24px;
+	padding: 24px 14px;
+	box-shadow: 0 0 10px rgb(0,0,0,0.8);
+}
+
+.dialog .heading{
+	padding: 12px;
+}
